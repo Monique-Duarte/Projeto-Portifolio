@@ -1,0 +1,85 @@
+body{
+    background-image: url(./img/starfall-night-sky-mountains-aesthetic-gif-preview-desktop-wallpaper.gif) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    background-color: black;
+    color: aliceblue;
+}
+
+.card-body {
+    font-size: 0.8em;
+}
+
+header {
+    max-height: 300px;
+}
+
+.info img{
+    margin-bottom: 16px;
+    margin-right: 24px;
+}
+
+.titulo h1 {
+    align-items: center;
+    text-align: center;
+    background-color: rgb(52, 111, 163);
+}
+
+.info h2{
+    font-size: 1.5em;
+}
+
+.id {
+    margin-bottom: 0%;
+}
+
+.qualis img {
+    width: 40px;
+    height: 30px;
+}
+
+.container.qualis {
+    margin-top: 0;
+    padding: 0%;
+}
+
+.foto img {
+    width: 180px;
+    height: 180px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.conteudo {
+    max-width: 100%;
+    width: 100%;
+}
+
+.container {
+    margin-top: 48px;
+}
+
+.lado {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato {
+    display: block;
+}
+
+.contato img {
+    width: 90px;
+    height: 30px;
+    right: 0%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.card {
+    margin-bottom: 32px;
+}
