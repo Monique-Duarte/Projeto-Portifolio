@@ -83,3 +83,98 @@ header {
 .card {
     margin-bottom: 32px;
 }
+
+footer {
+    color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+    .card-body {
+        font-size: 0.5em;
+    }
+    
+    header {
+        max-height: 150px;
+    }
+    
+    .info img{
+        margin-bottom: 6px;
+        margin-right: 6px;
+    }
+    
+    .titulo h1 {
+        align-items: center;
+        text-align: center;
+        background-color: rgb(52, 111, 163);
+    }
+    
+    .info h2{
+        font-size: 0.5em;
+    }
+    
+    .id {
+        margin-bottom: 0%;
+    }
+    
+    .qualis img {
+        width: 20px;
+        height: 15px;
+    }
+    
+    .container.qualis {
+        margin-top: 0;
+        padding: 0%;
+    }
+    
+    .foto img {
+        width: 30px;
+        height: 30px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+    .conteudo {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .container {
+        margin-top: 48px;
+    }
+    
+    .lado {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .conteudo {
+        width: 50%;
+    }
+    
+    .contato {
+        display: block;
+    }
+    
+    .contato img {
+        width: 45px;
+        height: 15px;
+        right: 0%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6px;
+    }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+        width: 100%;
+    }
+
+    .qualis img {
+        width: 35px;
+        height: 25px;
+    }
+}
