@@ -10,7 +10,7 @@ header{
 }
 
 .card-body {
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 header {
@@ -30,6 +30,7 @@ header {
 
 .info h2{
     font-size: 1.5em;
+    line-height: 1;
 }
 
 .id {
@@ -41,14 +42,14 @@ header {
     height: 30px;
 }
 
-.container.qualis {
+.container .qualis {
     margin-top: 0;
     padding: 0%;
 }
 
-.foto img {
-    width: 180px;
-    height: 180px;
+.lado .foto img {
+    width: 200px;
+    height: 200px;
     margin-left: 16px;
     margin-right: 16px;
 }
@@ -72,20 +73,40 @@ header {
 }
 
 .contato img {
-    width: 90px;
-    height: 30px;
-    right: 0%;
+    margin-left: 30px;
     align-items: center;
-    justify-content: center;
-    margin-top: 6px;
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.proj h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 32px;
+    background-color: rgb(52, 111, 163);
+    max-width: 100%;
+    width: 100%;
+    padding: 2px;
 }
 
 .card {
     margin-bottom: 32px;
+    width: 70%;
+}
+
+.row {
+    justify-content: center;
 }
 
 footer {
     color: #fff;
+    border-top: 1px solid #333;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
 }
 
 @media screen and (max-width: 640px) {
@@ -95,11 +116,17 @@ footer {
     
     header {
         max-height: 150px;
+        max-width: 100%;
     }
     
     .info img{
         margin-bottom: 6px;
-        margin-right: 6px;
+        margin-right: 0px;
+        width: 45px;
+    }
+
+    .id h1{
+        font-size: 1.2em;
     }
     
     .titulo h1 {
@@ -110,6 +137,7 @@ footer {
     
     .info h2{
         font-size: 0.5em;
+        line-height: 1;
     }
     
     .id {
@@ -124,11 +152,12 @@ footer {
     .container.qualis {
         margin-top: 0;
         padding: 0%;
+        display: flex;
     }
     
-    .foto img {
-        width: 30px;
-        height: 30px;
+    .lado .foto img {
+        width: 100px;
+        height: 100px;
         margin-left: 8px;
         margin-right: 8px;
     }
@@ -139,13 +168,16 @@ footer {
     }
     
     .container {
-        margin-top: 48px;
+        margin-top: 24px;
+        align-items: center;
+        display: flex;
     }
     
     .lado {
         display: flex;
         justify-content: space-between;
         width: 50%;
+        font-size: 0.8em;
     }
 
     .conteudo {
@@ -154,27 +186,75 @@ footer {
     
     .contato {
         display: block;
+        position: relative;
     }
     
-    .contato img {
+    .contato img,
+    .contato a {
         width: 45px;
         height: 15px;
-        right: 0%;
+        margin-top: 6px;
+        display: flex;
+        position: relative;
+    }
+
+    .container,
+    .row, 
+    .card,
+    .col-3 {
+        width: 100%;
+        justify-self: center;
+    }
+
+    .col-3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .proj {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container .row {
         align-items: center;
         justify-content: center;
-        margin-top: 6px;
+        display: flex;
     }
 
 }
 
 @media screen and (min-width: 641px) and (max-width: 1023px){
     .container{
-        max-width: 90%;
+        max-width: 100%;
         width: 100%;
     }
 
-    .qualis img {
-        width: 35px;
-        height: 25px;
+    .info h2{
+        font-size: 1em;
+        line-height: 1;
     }
+
+    .qualis img {
+        width: 30px;
+        height: 20px;
+    }
+
+    .container {
+    margin-top: 30px;
+}
+
+    .col-3 {
+    width: 30%;
+    }
+
+    .card-header {
+        font-size: 0.7em;
+    }
+
+    .card-body {
+        font-size: 0.6em;
+    }
+
 }
